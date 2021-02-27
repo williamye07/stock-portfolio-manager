@@ -6,24 +6,13 @@ import Holdings from './Pages/Holdings';
 import Transactions from './Pages/Transactions';
 import Watchlist from './Pages/Watchlist';
 
+import HeaderBanner from './HeaderBanner';
+
 export default function App() {
   return (
     <div>
       <Router>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/Holdings">Holdings</Link>
-          </li>
-          <li>
-            <Link to="/Watchlist">Watchlist</Link>
-          </li>
-          <li>
-            <Link to="/Transactions">Transactions</Link>
-          </li>
-        </ul>
+        <HeaderBanner />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/Holdings" component={Holdings} />

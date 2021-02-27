@@ -3,6 +3,9 @@ import React from 'react';
 
 import styled from 'styled-components';
 
+import MenuButton from './NavBar/MenuButton';
+import NavBar from './NavBar/NavBar';
+
 const HeaderBlockStyled = styled.div`
   background-color: #00b2a9;
   height: 200px;
@@ -16,7 +19,11 @@ class HeaderBanner extends React.Component {
   }
 
   render() {
-    return <HeaderBlockStyled />;
+    return (
+      <HeaderBlockStyled>
+        <NavBar />
+      </HeaderBlockStyled>
+    );
   }
 }
 

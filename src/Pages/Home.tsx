@@ -7,11 +7,7 @@ import HeaderBanner from '../HeaderBanner';
 
 class Home extends React.Component {
   render() {
-    return (
-      <div>
-        <HeaderBanner />
-      </div>
-    );
+    return <div>Home</div>;
   }
 }
 export default Home;
