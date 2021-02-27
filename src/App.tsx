@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import styled from 'styled-components';
 
 import Home from './Pages/Home';
 import Holdings from './Pages/Holdings';
@@ -8,9 +9,13 @@ import Watchlist from './Pages/Watchlist';
 
 import HeaderBanner from './HeaderBanner';
 
+const AppContainer = styled.div`
+  height: 100vh;
+`;
+
 export default function App() {
   return (
-    <div>
+    <AppContainer>
       <Router>
         <HeaderBanner />
         <Switch>
@@ -20,6 +25,6 @@ export default function App() {
           <Route path="/Transactions" component={Transactions} />
         </Switch>
       </Router>
-    </div>
+    </AppContainer>
   );
 }

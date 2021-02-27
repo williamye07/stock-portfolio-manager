@@ -8,7 +8,13 @@ import MenuButton from './MenuButton';
 const NavBar = () => {
   return (
     <div>
-      <MenuButton Clicked ButtonText="Home" component={RouterLink} exact to="/" />
+      <MenuButton
+        Clicked
+        ButtonText="Home"
+        component={RouterLink}
+        exact
+        to="/"
+      />
       <MenuButton
         Clicked
         ButtonText="Holdings"

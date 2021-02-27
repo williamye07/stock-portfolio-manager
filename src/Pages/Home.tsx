@@ -1,13 +1,16 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 
-import styled from 'styled-components';
-
-import HeaderBanner from '../HeaderBanner';
+import ContentContainer from '../shared-components/ContentContainer';
+import ContentPopout from '../shared-components/ContentPopout';
 
 class Home extends React.Component {
   render() {
-    return <div>Home</div>;
+    return (
+      <ContentContainer>
+        <ContentPopout>Home</ContentPopout>
+      </ContentContainer>
+    );
   }
 }
 export default Home;

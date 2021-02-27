@@ -1,11 +1,16 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 
-import styled from 'styled-components';
+import ContentContainer from '../shared-components/ContentContainer';
+import ContentPopout from '../shared-components/ContentPopout';
 
 class Holdings extends React.Component {
   render() {
-    return <div>Holdings</div>;
+    return (
+      <ContentContainer>
+        <ContentPopout>Holdings</ContentPopout>
+      </ContentContainer>
+    );
   }
 }
 export default Holdings;
