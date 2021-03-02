@@ -1,6 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Button from '@material-ui/core/Button';
@@ -48,4 +48,11 @@ const MenuButton = ({ ButtonText, Clicked, exact, to, component }) => {
   );
 };
 
+MenuButton.propTypes = {
+  ButtonText: PropTypes.string.isRequired,
+  Clicked: PropTypes.bool.isRequired,
+  exact: PropTypes.bool.isRequired,
+  to: PropTypes.string.isRequired,
+  component: PropTypes.elementType.isRequired,
+};
 export default MenuButton;
